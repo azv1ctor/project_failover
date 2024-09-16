@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackendFailover")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da198cc369f3e5949044af34db66e346a5df7954")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d10573f11367232ba7d5675acd0ddee451ac790")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackendFailover")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackendFailover")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

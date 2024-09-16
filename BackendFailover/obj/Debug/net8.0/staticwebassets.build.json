@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2RWSXkTsJW+2wrBAUVC+zlEv/JA5f/bsKFlfNH45E/E=",
+  "Source": "BackendFailover",
+  "BasePath": "_content/BackendFailover",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
