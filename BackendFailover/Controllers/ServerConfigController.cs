@@ -19,6 +19,7 @@ namespace BackendFailover.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] ServerConfig config)
         {
+            Console.WriteLine("Config recebida: " + config.ServerName);
             serverConfigs.Add(config);
             return Ok();
         }
