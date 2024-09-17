@@ -6,7 +6,7 @@ import ServerConfigForm from './components/ServerConfigForm';
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Configuração dos Servidores</h1>
+      {/* <h1>Configuração dos Servidores</h1> */}
       <ServerConfigForm />
     </div>
   );
