@@ -1,10 +1,12 @@
+using BackendFailover.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<Services.DatabaseFailoverService>();
+builder.Services.AddSingleton<DatabaseFailoverService>();
 
 builder.Services.AddCors(options =>
 {
