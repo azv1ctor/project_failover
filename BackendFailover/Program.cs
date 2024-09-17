@@ -4,6 +4,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<Services.DatabaseFailoverService>();
 
 builder.Services.AddCors(options =>
 {
