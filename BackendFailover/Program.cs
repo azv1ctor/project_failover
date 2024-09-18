@@ -1,4 +1,5 @@
 using BackendFailover.Services;
+using BackendFailover.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +16,9 @@ builder.Services.AddCors(options =>
         {
             policyBuilder.AllowAnyOrigin()
                          .AllowAnyMethod()
-                         .AllowAnyHeader();
+                         .AllowAnyHeader()
+                         .WithOrigins("http://localhost:3000")
+                         .AllowCredentials();
         });
 });
 
@@ -37,5 +40,6 @@ app.UseCors("AllowAll");
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapHub<ServerStatusHub>("/serverStatusHub");
 
 app.Run();
